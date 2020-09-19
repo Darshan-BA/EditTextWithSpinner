@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveBut"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <com.ba.edittextwithspinner.EditTextWithSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:id="@+id/phoneNumbers"
+            android:drawable="@drawable/icon_phone"
+            android:entries="@array/telephone"
+            android:hint="@string/phone_number"
+            app:spinnerPosition="side"
+            android:inputType="phone"
+            app:addCustomSpinnerItem="true"/>
+
+        <com.ba.edittextwithspinner.EditTextWithSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:id="@+id/emails"
+            android:entries="@array/email"
+            android:hint="@string/email"
+            app:spinnerPosition="down"
+            android:inputType="textEmailAddress"
+            app:addCustomSpinnerItem="false"/>
+
+        <com.ba.edittextwithspinner.EditTextWithSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:id="@+id/events"
+            android:entries="@array/events"
+            android:hint="@string/events"
+            app:spinnerPosition="down"
+            app:dateOrTime="date"
+            android:inputType="phone"
+            app:addCustomSpinnerItem="true"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

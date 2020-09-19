@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomEditText">
+        <attr name="android:hint" />
+        <attr name="android:entries" />
+        <attr name="android:inputType" />
+        <attr name="android:drawable" />
+        <attr name="dateOrTime" format="string"/>
+        <attr name="spinnerPosition" format="string"/>
+        <attr name="addCustomSpinnerItem" format="boolean"/>
+    </declare-styleable>
+
+</resources>

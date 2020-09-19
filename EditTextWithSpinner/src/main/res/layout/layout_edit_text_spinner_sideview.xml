@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="10">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/compound_editTextLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/compound_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.reginald.editspinner.EditSpinner
+        android:id="@+id/compound_editSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:singleLine="true"
+        android:spinnerMode="dropdown"
+        app:dropDownDrawable="@drawable/icon_drop_down_arrow"
+        android:focusable="false"/>
+</LinearLayout>
